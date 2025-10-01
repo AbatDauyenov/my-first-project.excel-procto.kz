@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excel PROСТО</title>
+<!--  <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="main"></script>
+<link rel="stylesheet" href="css/form_style.css">
+
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <div class="flex items-center space-x-2">
+      <!-- Logo -->
+      <div class="w-8 h-8 grid grid-cols-2 gap-0.5 bg-green-500 text-white font-bold text-lg items-center justify-center">E</div>
+      <h1 class="text-2xl font-bold">Excel PROСТО</h1>
+    </div>
+    <div class="text-sm text-gray-600">
+      📞 +7 (777) 123-45-67 | ✉️ info@excelprosto.kz
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-green-100 text-center py-16 px-6">
+    <h2 class="text-4xl font-bold mb-4">Освой Excel легко и быстро</h2>
+    <p class="text-lg mb-6">Полный курс от базы до продвинутого уровня с практическими заданиями.</p>
+    <!-- Кнопка купить курс -->
+    <button class="buy-btn bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition" data-course="any">Купить курс</button>
+  </section>
+
+  <!-- Что вас ждет -->
+  <section class="max-w-4xl mx-auto py-12 px-6">
+    <h3 class="text-2xl font-bold mb-4 text-center">Что вас ждет?</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h4 class="text-lg font-semibold mb-2">Практика</h4>
+        <p>Задания после каждой темы помогут закрепить материал.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h4 class="text-lg font-semibold mb-2">Файлы-примеры</h4>
+        <p>Все упражнения сопровождаются готовыми файлами для работы.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h4 class="text-lg font-semibold mb-2">Пошаговые инструкции</h4>
+        <p>Каждая тема объяснена простым и доступным языком.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h4 class="text-lg font-semibold mb-2">Реальные задачи</h4>
+        <p>Примеры из реальной практики, которые можно использовать в работе.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Программа курса -->
+  <section class="bg-gray-100 py-12 px-6">
+    <h3 class="text-2xl font-bold mb-8 text-center">Программа курса</h3>
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <p class="font-semibold">1. Основы Excel</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <p class="font-semibold">2. Формулы и функции</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <p class="font-semibold">3. Таблицы и фильтры</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <p class="font-semibold">4. Диаграммы и визуализация</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <p class="font-semibold">5. Практика и мини-проекты</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Учебный материал -->
+  <section id="materials" class="py-12 px-6">
+    <h3 class="text-2xl font-bold mb-8 text-center">Учебный материал</h3>
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+      <!-- Базовый -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+        <h4 class="text-xl font-bold mb-4">Базовый уровень</h4>
+        <p class="mb-4">Идеально для новичков. Освой основы Excel и научись уверенно работать с таблицами.</p>
+        <p class="text-lg font-semibold mb-4">Цена: 9 900 ₸</p>
+        <button class="buy-btn bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700" data-course="Базовый">Купить базовый курс</button>
+      </div>
+
+      <!-- Продвинутый -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+        <h4 class="text-xl font-bold mb-4">Продвинутый уровень</h4>
+        <p class="mb-4">Для тех, кто хочет глубже понять Excel. Сложные формулы, сводные таблицы и автоматизация.</p>
+        <p class="text-lg font-semibold mb-4">Цена: 14 900 ₸</p>
+        <button class="buy-btn bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700" data-course="Продвинутый">Купить продвинутый курс</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6 mt-12">
+    <p>© 2025 Excel PROСТО. Все права защищены.</p>
+  </footer>
+
+
+ <!-- МОДАЛЬНОЕ ОКНО -->
+<div id="buyModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Оформление заявки</h2>
+    <form id="buyForm" class="form-grid">
+      <div class="form-group">
+        <label>Имя</label>
+        <input type="text" name="firstName" required>
+      </div>
+
+      <div class="form-group">
+        <label>Фамилия</label>
+        <input type="text" name="lastName" required>
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label>Телефон</label>
+        <input type="tel" name="phone" required>
+      </div>
+
+      <div id="courseField" class="form-group" style="display:none;">
+        <label>Курс</label>
+        <select name="course">
+          <option value="Базовый">Базовый</option>
+          <option value="Продвинутый">Продвинутый</option>
+        </select>
+      </div>
+
+      <input type="hidden" name="courseFixed" id="courseFixed">
+
+      <button type="submit" class="submit-btn">Отправить</button>
+    </form>
+  </div>
+</div>
+
+<script src="js/form_script.js"></script>
+</body>
+</html>
