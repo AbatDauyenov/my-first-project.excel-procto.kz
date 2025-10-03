@@ -75,6 +75,26 @@
     </div>
   </section>
 
+  <!-- Видео-уроки -->
+  <section id="videos" class="bg-gray-100 py-12 px-6">
+    <h3 class="text-2xl font-bold mb-8 text-center">Видео-уроки</h3>
+    <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+      <!-- Список -->
+      <div class="col-span-1 space-y-3">
+        <button class="video-btn w-full bg-white p-3 rounded-lg shadow hover:bg-green-100 transition" data-video="https://youtu.be/xpYjt_p2kIs?si=xzyH9RxQQmA2XLNy">Урок 1: Основы Excel</button>
+        <button class="video-btn w-full bg-white p-3 rounded-lg shadow hover:bg-green-100 transition" data-video="https://youtu.be/yNIIMKKhNw0?si=mq9dwyyeR5rH6M0C">Урок 2: Формулы</button>
+        <button class="video-btn w-full bg-white p-3 rounded-lg shadow hover:bg-green-100 transition" data-video="https://youtu.be/VNfQIo3d-rs?si=PwnYjuXg0FXSEKgW">Урок 3: Диаграммы</button>
+      </div>
+
+      <!-- Видео -->
+      <div class="col-span-2">
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe id="videoPlayer" class="w-full h-96 rounded-lg shadow" src="https://youtu.be/xpYjt_p2kIs?si=9U0d1vyhLETXKhy_" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Учебный материал -->
   <section id="materials" class="py-12 px-6">
     <h3 class="text-2xl font-bold mb-8 text-center">Учебный материал</h3>
@@ -145,5 +165,6 @@
 </div>
 
 <script src="js/form_script.js"></script>
+<script src="js/video_script.js"></script>
 </body>
 </html>
